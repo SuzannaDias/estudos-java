@@ -1,14 +1,26 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-double b, B, h, area;
-b= 6.0;
-B = 8.0;
-h = 5.0;
-area = (b + B)/ 2.0 * h;
-System.out.println(area);
-	
+Scanner sc = new Scanner(System.in);
+ int n = sc.nextInt();
+int in = 0;
+int out = 0;
+
+for (int i = 0; i < n; i ++) {
+	int x = sc.nextInt();
+	if(x >= 10 && x <= 20) {
+		 in++;
+	} else {
+		out ++;
+	}
+}
+
+System.out.println(in + "in");
+System.out.println(out + "out");
+
+sc.close();
 	}
 
 }
